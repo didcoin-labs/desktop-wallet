@@ -2,8 +2,8 @@ export default {
   COMMON: {
     ADDRESS: 'Address',
     ALL: 'All',
-    APP_NAME: 'ARK Desktop Wallet',
-    APP_NAME_SHORT: 'ARK Desktop',
+    APP_NAME: 'DID Desktop Wallet',
+    APP_NAME_SHORT: 'DID Desktop',
     APPEARANCE: 'Appearance',
     AVATAR: 'Avatar',
     BACK: 'Back',
@@ -69,29 +69,29 @@ export default {
       OWNER: 'This also brings greater responsibility for you, the account owner.',
       WARNING: {
         ACCOUNT: 'Unlike your traditional bank account, {CANNOT_RESTORE}.',
-        CANNOT_RESTORE: 'lost passwords, passphrases or stolen funds cannot be restored by the delegates, ARK.io team, or anyone else'
+        CANNOT_RESTORE: 'lost passwords, passphrases or stolen funds cannot be restored by the delegates, DID.io team, or anyone else'
       },
       SECURITY: 'The security of your account is solely up to you.'
     },
     RESPONSIBILITY: {
       TITLE: 'Your Responsibility',
       STORAGE: {
-        EXPLANATION: 'The {PASSPHRASE} of each wallet address is able to sign transactions and move funds. This means if your computer dies but you have your passphrase, you can still access your funds. The ARK Desktop Wallet has an additional feature that lets you set an {ENCRYPTED} as well, for easier management. If your computer dies, you cannot use the encrypted password to access your funds from a different machine. {NEED}.',
+        EXPLANATION: 'The {PASSPHRASE} of each wallet address is able to sign transactions and move funds. This means if your computer dies but you have your passphrase, you can still access your funds. The DID Desktop Wallet has an additional feature that lets you set an {ENCRYPTED} as well, for easier management. If your computer dies, you cannot use the encrypted password to access your funds from a different machine. {NEED}.',
         PASSPHRASE: 'passphrase',
         ENCRYPTED: 'encrypted password',
         NEED: 'You will need the passphrase'
       },
       BACKUP: {
         ALWAYS: 'Always backup your passphrase and keep it in a safe place.',
-        OPTIONS: 'You can write it down on thick paper and store multiple copies in secure locations. You can also store it on an encrypted flash drive. Alternatively, you can use a Ledger Nano S USB hardware device, available at Ledger.com, to store and access your funds and the ARK Desktop Wallet. You can plug your Ledger Nano S into your computer and access the ARK blockchain without needing to enter your passphrase.'
+        OPTIONS: 'You can write it down on thick paper and store multiple copies in secure locations. You can also store it on an encrypted flash drive. Alternatively, you can use a Ledger Nano S USB hardware device, available at Ledger.com, to store and access your funds and the DID Desktop Wallet. You can plug your Ledger Nano S into your computer and access the DID blockchain without needing to enter your passphrase.'
       },
       REMEMBER: 'Remember, anyone who has your passphrase can access your funds. Never share your account with anyone and avoid storing it in locations that are susceptible to hacks, such as the Cloud.'
     },
     TURN: {
       TITLE: 'Your Turn',
-      KNOWLEDGE: 'Now, armed with the knowledge of how important it is to keep your passphrases safe, you are ready to claim your financial autonomy with the ARK Desktop Wallet.',
-      SUPPORT: 'ARK is an open-source ecosystem and if you need assistance, the ARK community and team is here to help. Create a post on reddit.ark.io, or join the real-time chat system at slack.ark.io.',
-      CONCLUSION: 'Everyone here on the ARK.io team hopes you enjoy using the ARK Desktop Wallet to participate in the blockchain revolution!'
+      KNOWLEDGE: 'Now, armed with the knowledge of how important it is to keep your passphrases safe, you are ready to claim your financial autonomy with the DID Desktop Wallet.',
+      SUPPORT: 'DID is an open-source ecosystem and if you need assistance, the DID community and team is here to help. Create a post on reddit.didcoin.com, or join the real-time chat system at slack.didcoin.com.',
+      CONCLUSION: 'Everyone here on the DID.io team hopes you enjoy using the DID Desktop Wallet to participate in the blockchain revolution!'
     }
   },
 
@@ -225,7 +225,7 @@ export default {
   },
 
   APP_FOOTER: {
-    TEXT: 'Made with ♥ by ARK'
+    TEXT: 'Made with ♥ by DIDCoin'
   },
 
   APP_SIDEMENU: {
@@ -623,7 +623,7 @@ export default {
 
     WALLET_EXCHANGE: {
       CHANGELLY_TERMS: {
-        TITLE: 'Purchase {ticker} directly within ARK Desktop Wallet with our Changelly integration',
+        TITLE: 'Purchase {ticker} directly within DID Desktop Wallet with our Changelly integration',
         CONTENT: 'Changelly lets you exchange other cryptocurrencies into {ticker} and has an option to buy {ticker} directly with your credit or debit cards.',
         CONFIRMATION: 'I have read and I agree with the {terms} and the {privacy} from Changelly. By clicking {button}, I acknowledge and understand that my transaction may trigger AML/KYC verification according to Changelly {kyc}.',
         TERMS_OF_USE: 'terms of use',
@@ -745,7 +745,7 @@ export default {
   PLUGIN_ENABLE_CONFIRMATION: {
     QUESTION: 'Are you sure you want to enable the "{name}" plugin?',
     NO: 'No, keep it disabled',
-    NOTICE: 'WARNING: By accepting this disclaimer, you are confirming that you are adding an untested and unverified third-party plugin to the desktop wallet. ARK SCIC assumes no liability for any harm caused by this plug-in and has no responsibility to test them for security vulnerabilities. All security testing and vulnerability discovery is the sole responsibility of the plugin author. ARK SCIC makes no warranties, express or implied, regarding the conditions of merchantability or fitness for particular purpose of any third-party plugin. ARK SCIC makes no representations about the functionality, accuracy, availability, quality, completeness, security, validity or non-infringement of any third-party plugins. Any third-party plugin used is done so at your own risk.',
+    NOTICE: 'WARNING: By accepting this disclaimer, you are confirming that you are adding an untested and unverified third-party plugin to the desktop wallet. DID SCIC assumes no liability for any harm caused by this plug-in and has no responsibility to test them for security vulnerabilities. All security testing and vulnerability discovery is the sole responsibility of the plugin author. DID SCIC makes no warranties, express or implied, regarding the conditions of merchantability or fitness for particular purpose of any third-party plugin. DID SCIC makes no representations about the functionality, accuracy, availability, quality, completeness, security, validity or non-infringement of any third-party plugins. Any third-party plugin used is done so at your own risk.',
     YES: 'Yes, enable it'
   },
 
@@ -992,7 +992,7 @@ export default {
     USERNAME_MAX_LENGTH_ERROR: 'The username must be less than or equal to 20 characters long',
     ALREADY_REGISTERED: 'This wallet is already registered as a delegate',
     BLOG: 'Voting Guide',
-    EXPLANATION: 'Voting is an optional, but important mechanism that keeps the ARK network secure. The {delegates} delegates with the most votes from the network are responsible for verifying and forging transactions into new blocks. This page can be used to cast your vote for a delegate that you support. Learn more about voting for a delegate by clicking on the following link:',
+    EXPLANATION: 'Voting is an optional, but important mechanism that keeps the DID network secure. The {delegates} delegates with the most votes from the network are responsible for verifying and forging transactions into new blocks. This page can be used to cast your vote for a delegate that you support. Learn more about voting for a delegate by clicking on the following link:',
     VOTE_DELEGATE: 'Vote Delegate {delegate}',
     UNVOTE_DELEGATE: 'Unvote Delegate {delegate}',
     CURRENTLY_VOTED: 'You are currently voting for {delegate}',

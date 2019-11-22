@@ -2,8 +2,8 @@ export default {
   COMMON: {
     ADDRESS: 'Endereço',
     ALL: 'Tudo',
-    APP_NAME: 'Carteira ARK DESKTOP',
-    APP_NAME_SHORT: 'ARK Desktop',
+    APP_NAME: 'Carteira DID DESKTOP',
+    APP_NAME_SHORT: 'DID Desktop',
     APPEARANCE: 'Aparencia',
     AVATAR: 'Avatar',
     BACK: 'Voltar',
@@ -69,29 +69,29 @@ export default {
       OWNER: 'Isso também traz uma responsabilidade maior para você, o proprietário da conta.',
       WARNING: {
         ACCOUNT: 'Diferente da sua conta bancária tradicional, {CANNOT_RESTORE}.',
-        CANNOT_RESTORE: 'Senhas perdidas, senhas ou fundos roubados não podem ser restaurados pelos delegados, pela equipe do ARK.io ou por qualquer outra pessoa'
+        CANNOT_RESTORE: 'Senhas perdidas, senhas ou fundos roubados não podem ser restaurados pelos delegados, pela equipe do DID.io ou por qualquer outra pessoa'
       },
       SECURITY: 'A segurança da sua conta é da sua exclusiva responsabilidade.'
     },
     RESPONSIBILITY: {
       TITLE: 'Sua responsabilidade',
       STORAGE: {
-        EXPLANATION: 'A {PASSPHRASE} de cada endereço da carteira é capaz de assinar transações e movimentar fundos. Isso significa que, se seu computador morrer, mas você tiver sua frase secreta, ainda poderá acessar seus fundos. A ARK Desktop Wallet tem um recurso adicional que permite definir um {ENCRYPTED} também, para facilitar o gerenciamento. Se o seu computador morrer, você não poderá usar a senha criptografada para acessar seus fundos de uma máquina diferente. {NEED}.',
+        EXPLANATION: 'A {PASSPHRASE} de cada endereço da carteira é capaz de assinar transações e movimentar fundos. Isso significa que, se seu computador morrer, mas você tiver sua frase secreta, ainda poderá acessar seus fundos. A DID Desktop Wallet tem um recurso adicional que permite definir um {ENCRYPTED} também, para facilitar o gerenciamento. Se o seu computador morrer, você não poderá usar a senha criptografada para acessar seus fundos de uma máquina diferente. {NEED}.',
         PASSPHRASE: 'Frase secreta',
         ENCRYPTED: 'Senha criptografada',
         NEED: 'Você precisará da frase secreta'
       },
       BACKUP: {
         ALWAYS: 'Sempre faça backup de sua frase secreta e mantenha-a em um local seguro.',
-        OPTIONS: 'Você pode anotá-lo em papel e armazenar várias cópias em locais seguros. Você também pode armazená-lo em uma unidade flash criptografada. Alternativamente, você pode usar um dispositivo de hardware USB Ledger Nano S, disponível em Ledger.com, para armazenar e acessar seus fundos e a Carteira Desktop ARK. Você pode conectar seu Ledger Nano S ao seu computador e acessar o blockchain ARK sem precisar digitar sua frase secreta..'
+        OPTIONS: 'Você pode anotá-lo em papel e armazenar várias cópias em locais seguros. Você também pode armazená-lo em uma unidade flash criptografada. Alternativamente, você pode usar um dispositivo de hardware USB Ledger Nano S, disponível em Ledger.com, para armazenar e acessar seus fundos e a Carteira Desktop DID. Você pode conectar seu Ledger Nano S ao seu computador e acessar o blockchain DID sem precisar digitar sua frase secreta..'
       },
       REMEMBER: 'Remember, anyone who has your passphrase can access your funds. Never share your account with anyone and avoid storing it in locations that are susceptible to hacks, such as the Cloud.'
     },
     TURN: {
       TITLE: 'Your Turn',
-      KNOWLEDGE: 'Agora, armado com o conhecimento de como é importante manter suas senhas seguras, você está pronto para reivindicar sua autonomia financeira com o ARK Desktop Wallet.',
-      SUPPORT: 'O ARK é um ecossistema de código aberto e, se precisar de ajuda, a comunidade e a equipe da ARK estão aqui para ajudar. Crie um post no reddit.ark.io, ou entre no chat em tempo real no slack.ark.io.',
-      CONCLUSION: 'Todos aqui na equipe ARK.io esperam que você goste de usar a ARK Desktop Wallet para participar da revolução blockchain!'
+      KNOWLEDGE: 'Agora, armado com o conhecimento de como é importante manter suas senhas seguras, você está pronto para reivindicar sua autonomia financeira com o DID Desktop Wallet.',
+      SUPPORT: 'O DID é um ecossistema de código aberto e, se precisar de ajuda, a comunidade e a equipe da DID estão aqui para ajudar. Crie um post no reddit.didcoin.com, ou entre no chat em tempo real no slack.didcoin.com.',
+      CONCLUSION: 'Todos aqui na equipe DID.io esperam que você goste de usar a DID Desktop Wallet para participar da revolução blockchain!'
     }
   },
 
@@ -224,7 +224,7 @@ export default {
   },
 
   APP_FOOTER: {
-    TEXT: 'Feito com ♥ por Ark'
+    TEXT: 'Feito com ♥ por DIDCoin'
   },
 
   APP_SIDEMENU: {
@@ -612,7 +612,7 @@ export default {
 
     WALLET_EXCHANGE: {
       CHANGELLY_TERMS: {
-        TITLE: 'Compre {ticker} diretamente dentro da ARK Desktop Wallet com a nossa integração com o Changelly',
+        TITLE: 'Compre {ticker} diretamente dentro da DID Desktop Wallet com a nossa integração com o Changelly',
         CONTENT: 'Changelly permite que você troque outras criptomoedas em {ticker} e tem a opção de comprar {ticker} diretamente com seus cartões de crédito ou débito.',
         CONFIRMATION: 'Eu li e concordo com o {terms} e a {privacy} de Changelly. Clicando {button}, Eu reconheço e entendo que minha transação pode acionar a verificação AML / KYC de acordo com a Changelly {kyc}.',
         TERMS_OF_USE: 'termos de uso',
@@ -733,7 +733,7 @@ export default {
   PLUGIN_ENABLE_CONFIRMATION: {
     QUESTION: 'Tem certeza de que deseja ativar este plugin?',
     NO: 'Não, mantenha desativado',
-    NOTICE: 'AVISO: Ao aceitar este aviso, você confirma que está adicionando um plug-in de terceiros não testado e não verificado à carteira da área de trabalho. O ARK SCIC não se responsabiliza por nenhum dano causado por este plug-in e não tem responsabilidade de testá-los quanto a vulnerabilidades de segurança. Todos os testes de segurança e descoberta de vulnerabilidades são de responsabilidade exclusiva do autor do plug-in. O ARK SCIC não oferece garantias, expressas ou implícitas, em relação às condições de comercialização ou adequação a finalidades específicas de qualquer plug-in de terceiros. O ARK SCIC não faz representações sobre a funcionalidade, precisão, disponibilidade, qualidade, integridade, segurança, validade ou não violação de nenhum plug-in de terceiros. Qualquer plug-in de terceiros usado é feito por sua conta e risco.',
+    NOTICE: 'AVISO: Ao aceitar este aviso, você confirma que está adicionando um plug-in de terceiros não testado e não verificado à carteira da área de trabalho. O DID SCIC não se responsabiliza por nenhum dano causado por este plug-in e não tem responsabilidade de testá-los quanto a vulnerabilidades de segurança. Todos os testes de segurança e descoberta de vulnerabilidades são de responsabilidade exclusiva do autor do plug-in. O DID SCIC não oferece garantias, expressas ou implícitas, em relação às condições de comercialização ou adequação a finalidades específicas de qualquer plug-in de terceiros. O DID SCIC não faz representações sobre a funcionalidade, precisão, disponibilidade, qualidade, integridade, segurança, validade ou não violação de nenhum plug-in de terceiros. Qualquer plug-in de terceiros usado é feito por sua conta e risco.',
     YES: 'Sim, habilite'
   },
 
@@ -978,7 +978,7 @@ export default {
     USERNAME_MAX_LENGTH_ERROR: 'O nome de usuário deve ser menor ou igual a 20 caracteres',
     ALREADY_REGISTERED: 'Esta carteira já está registrada como delegado',
     BLOG: 'Guia de votação',
-    EXPLANATION: 'A votação é um mecanismo opcional, mas importante, que mantém a rede da Ark segura. Os 51 delegados com mais votos da rede são responsáveis por verificar e forjar transações em novos blocos. Esta página pode ser usada para votar em um delegado que você apóia. Saiba mais sobre como votar em um delegado clicando no link a seguir:',
+    EXPLANATION: 'A votação é um mecanismo opcional, mas importante, que mantém a rede da DIDCoin segura. Os 51 delegados com mais votos da rede são responsáveis por verificar e forjar transações em novos blocos. Esta página pode ser usada para votar em um delegado que você apóia. Saiba mais sobre como votar em um delegado clicando no link a seguir:',
     VOTE_DELEGATE: 'Delegado de voto {delegate}',
     UNVOTE_DELEGATE: 'Desvendar Delegado {delegate}',
     CURRENTLY_VOTED: 'Você é votado atualmente para {delegate}',

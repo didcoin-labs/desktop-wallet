@@ -2,8 +2,8 @@ export default {
   COMMON: {
     ADDRESS: 'Indirizzo',
     ALL: 'Tutto',
-    APP_NAME: 'ARK Desktop Wallet',
-    APP_NAME_SHORT: 'ARK Desktop',
+    APP_NAME: 'DID Desktop Wallet',
+    APP_NAME_SHORT: 'DID Desktop',
     APPEARANCE: 'Aspetto',
     AVATAR: 'Avatar',
     BACK: 'Indietro',
@@ -69,29 +69,29 @@ export default {
       OWNER: 'Questo porta anche a maggiori responsabilità nei tuoi confronti, il proprietario del conto',
       WARNING: {
         ACCOUNT: 'A differenza del tuo conto bancario tradizionale, {CANNOT_RESTORE}',
-        CANNOT_RESTORE: 'password perdute, frasi segrete o fondi rubati non potranno essere ripristinati dal team ARK , dai Delegati e da nessun altro.'
+        CANNOT_RESTORE: 'password perdute, frasi segrete o fondi rubati non potranno essere ripristinati dal team DID , dai Delegati e da nessun altro.'
       },
       SECURITY: 'La sicurezza del tuo conto spetta esclusivamente a te.'
     },
     RESPONSIBILITY: {
       TITLE: 'La tua Responsabilità',
       STORAGE: {
-        EXPLANATION: 'La {PASSPHRASE} di ogni indirizzo portafoglio può firmare transazioni e muovere i fondi. Questo significa che se il tuo computer "muore", ma tu possiedi la tua frase segreta, potrai ancora accedere ai tuoi fondi. L\'ARK Desktop Wallet ha un\'ulteriore funzionalità che ti permette di settare anche un {ENCRYPTED}, per agevolare la gestione. Se il tuo computer "muore", non sarà possibile utilizzare la password cifrata per accedere ai fondi da una macchina differente. {NEED}.',
+        EXPLANATION: 'La {PASSPHRASE} di ogni indirizzo portafoglio può firmare transazioni e muovere i fondi. Questo significa che se il tuo computer "muore", ma tu possiedi la tua frase segreta, potrai ancora accedere ai tuoi fondi. L\'DID Desktop Wallet ha un\'ulteriore funzionalità che ti permette di settare anche un {ENCRYPTED}, per agevolare la gestione. Se il tuo computer "muore", non sarà possibile utilizzare la password cifrata per accedere ai fondi da una macchina differente. {NEED}.',
         PASSPHRASE: 'frase segreta',
         ENCRYPTED: 'password cifrata',
         NEED: 'Avrai bisogno della frase segreta'
       },
       BACKUP: {
         ALWAYS: 'Effettua sempre il backup della frase segreta e conservala in un luogo sicuro.',
-        OPTIONS: 'È possibile scriverla su carta spessa e archiviarne più copie in posti sicuri. È inoltre possibile memorizzarla su un\'unità flash crittografata. In alternativa, è possibile utilizzare un dispositivo hardware USB Ledger Nano S, disponibile su Ledger.com, per archiviare e accedere ai fondi e all\'ARK Desktop Wallet. Puoi collegare il tuo Ledger Nano S al tuo computer e accedere alla blockchain ARK senza dover inserire la tua frase segreta.'
+        OPTIONS: 'È possibile scriverla su carta spessa e archiviarne più copie in posti sicuri. È inoltre possibile memorizzarla su un\'unità flash crittografata. In alternativa, è possibile utilizzare un dispositivo hardware USB Ledger Nano S, disponibile su Ledger.com, per archiviare e accedere ai fondi e all\'DID Desktop Wallet. Puoi collegare il tuo Ledger Nano S al tuo computer e accedere alla blockchain DID senza dover inserire la tua frase segreta.'
       },
       REMEMBER: 'Ricorda, chiunque abbia la frase segreta può accedere ai tuoi fondi. Non condividere mai il tuo conto con nessuno ed evita di memorizzarlo in luoghi che sono suscettibili di hack, come il Cloud.'
     },
     TURN: {
       TITLE: 'Il tuo Turno',
-      KNOWLEDGE: 'Ora, armato della consapevolezza di quanto sia importante mantenere al sicuro le tue frasi segrete, sei pronto a rivendicare la tua autonomia finanziaria con ARK Desktop Wallet.',
-      SUPPORT: 'ARK è un ecosistema open source e se hai bisogno di assistenza, la community e il team ARK sono qui per aiutarti. Crea un post su reddit.ark.io o unisciti al sistema di chat in tempo reale su slack.ark.io.',
-      CONCLUSION: 'Tutti qui, al team di ARK.io, speriamo ti piacerà utilizzare l\'ARK Desktop Wallet e partecipare alla rivoluzione blockchain!'
+      KNOWLEDGE: 'Ora, armato della consapevolezza di quanto sia importante mantenere al sicuro le tue frasi segrete, sei pronto a rivendicare la tua autonomia finanziaria con DID Desktop Wallet.',
+      SUPPORT: 'DID è un ecosistema open source e se hai bisogno di assistenza, la community e il team DID sono qui per aiutarti. Crea un post su reddit.didcoin.com o unisciti al sistema di chat in tempo reale su slack.didcoin.com.',
+      CONCLUSION: 'Tutti qui, al team di DID.io, speriamo ti piacerà utilizzare l\'DID Desktop Wallet e partecipare alla rivoluzione blockchain!'
     }
   },
 
@@ -225,7 +225,7 @@ export default {
   },
 
   APP_FOOTER: {
-    TEXT: 'Fatto con ♥ da ARK'
+    TEXT: 'Fatto con ♥ da DIDCoin'
   },
 
   APP_SIDEMENU: {
@@ -623,7 +623,7 @@ export default {
 
     WALLET_EXCHANGE: {
       CHANGELLY_TERMS: {
-        TITLE: 'Acquista {ticker} direttamente dall\'ARK Desktop Wallet tramite la nostra integrazione di Changelly',
+        TITLE: 'Acquista {ticker} direttamente dall\'DID Desktop Wallet tramite la nostra integrazione di Changelly',
         CONTENT: 'Changelly ti permette di scambiare altre criptovalute in {ticker} ed ha un\'opzione per acquistare {ticker} direttamente tramite le tue carte di credito o di debito.',
         CONFIRMATION: 'Ho letto e sono d\'accordo con i termini {terms} e {privacy} di Changelly. Facendo clic su {button}, riconosco e comprendo che la mia transazione potrebbe attivare la verifica AML/KYC in conformità con Changelly {kyc}.',
         TERMS_OF_USE: 'termini d\'uso',
@@ -745,7 +745,7 @@ export default {
   PLUGIN_ENABLE_CONFIRMATION: {
     QUESTION: 'Sei sicuro di voler attivare il plugin "{name}"?',
     NO: 'No, tenerlo disattivato',
-    NOTICE: 'ATTENZIONE: accettando questa dichiarazione di non responsabilità, confermi di aggiungere al portafoglio desktop un plugin di terze parti, non testato e non verificato. ARK SCIC non si assume alcuna responsabilità per eventuali danni causati da questo plug-in e non si assume alcuna responsabilità di testare i plugin per vulnerabilità di sicurezza. I test di sicurezza e l\'individuazione delle vulnerabilità sono di esclusiva responsabilità dell\'autore del plug-in. ARK SCIC non rilascia alcuna garanzia, espressa o implicita, in merito alle condizioni di commerciabilità o idoneità per scopi particolari di qualsiasi plugin di terze parti. ARK SCIC non rilascia dichiarazioni in merito a sicurezza, validità o non violazione di plug-in di terze parti. Qualsiasi plug-in di terze parti utilizzato viene eseguito a proprio rischio.',
+    NOTICE: 'ATTENZIONE: accettando questa dichiarazione di non responsabilità, confermi di aggiungere al portafoglio desktop un plugin di terze parti, non testato e non verificato. DID SCIC non si assume alcuna responsabilità per eventuali danni causati da questo plug-in e non si assume alcuna responsabilità di testare i plugin per vulnerabilità di sicurezza. I test di sicurezza e l\'individuazione delle vulnerabilità sono di esclusiva responsabilità dell\'autore del plug-in. DID SCIC non rilascia alcuna garanzia, espressa o implicita, in merito alle condizioni di commerciabilità o idoneità per scopi particolari di qualsiasi plugin di terze parti. DID SCIC non rilascia dichiarazioni in merito a sicurezza, validità o non violazione di plug-in di terze parti. Qualsiasi plug-in di terze parti utilizzato viene eseguito a proprio rischio.',
     YES: 'Si, attiva'
   },
 
@@ -992,7 +992,7 @@ export default {
     USERNAME_MAX_LENGTH_ERROR: 'Il nome utente deve essere inferiore o uguale a 20 caratteri',
     ALREADY_REGISTERED: 'Questo portafoglio è già registrato come Delegato',
     BLOG: 'Guida al voto',
-    EXPLANATION: 'Il voto è opzionale, ma importante, che mantiene la rete ARK sicura. I 51 delegati con il maggior numero di voti della rete sono responsabili della verifica e della forgiatura di transazioni in nuovi blocchi. Questa pagina può essere utilizzata per esprimere il tuo voto per un delegato che vuoi supportare. Ulteriori informazioni sul voto per un delegato sono disponibili al seguente link:',
+    EXPLANATION: 'Il voto è opzionale, ma importante, che mantiene la rete DID sicura. I 51 delegati con il maggior numero di voti della rete sono responsabili della verifica e della forgiatura di transazioni in nuovi blocchi. Questa pagina può essere utilizzata per esprimere il tuo voto per un delegato che vuoi supportare. Ulteriori informazioni sul voto per un delegato sono disponibili al seguente link:',
     VOTE_DELEGATE: 'Vota Delegato {delegate}',
     UNVOTE_DELEGATE: 'Rimuovi voto a Delegato {delegate}',
     CURRENTLY_VOTED: 'Al momento hai votato per {delegate}',

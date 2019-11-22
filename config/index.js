@@ -2,7 +2,7 @@ const os = require('os')
 const path = require('path')
 
 exports.APP = {
-  website: 'https://ark.io',
+  website: 'https://didcoin.com',
   transactionExpiryMinutes: 45
 }
 
@@ -17,7 +17,7 @@ exports.PEERS = {
 }
 
 exports.ANNOUNCEMENTS = {
-  rssUrl: 'https://blog.ark.io/feed'
+  rssUrl: 'https://blog.didcoin.com/feed'
 }
 
 exports.VENDOR_FIELD = {
