@@ -1,24 +1,21 @@
 {
   "private": true,
-  "name": "ark-desktop-wallet",
+  "name": "did-desktop-wallet",
   "version": "2.6.2",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArkEcosystem/desktop-wallet.git"
+    "url": "git+https://github.com/didcoin-labs/desktop-wallet.git"
   },
-  "author": "ArkEcosystem <info@ark.io>",
+  "author": "Dmitry Yakov <dmitry.yakov7@gmail.com>",
   "contributors": [
-    "Alex Barnsley <alex@ark.io>",
-    "ItsANameToo <itsanametoo@protonmail.com>",
-    "Juan A. Martín <juan@ark.io>",
-    "Lúcio Rubens <lucio@ark.io>"
+    "Dmitry Yakov <dmitry.yakov7@gmail.com>"
   ],
-  "description": "Ark Ecosystem Desktop Wallet",
+  "description": "DIDCoin Desktop Wallet",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ArkEcosystem/desktop-wallet/issues"
+    "url": "https://github.com/didcoin-labs/desktop-wallet/issues"
   },
-  "homepage": "https://github.com/ArkEcosystem/desktop-wallet#readme",
+  "homepage": "https://github.com/didcoin-labs/desktop-wallet#readme",
   "main": "./dist/electron/main.js",
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
@@ -175,8 +172,8 @@
     "webpack-hot-middleware": "^2.25.0"
   },
   "build": {
-    "productName": "Ark Desktop Wallet",
-    "appId": "io.ark.desktop-wallet",
+    "productName": "DIDCoin Desktop Wallet",
+    "appId": "com.didcoin.desktop-wallet",
     "artifactName": "${name}-${os}-${arch}-${version}.${ext}",
     "publish": {
       "provider": "github",
@@ -186,9 +183,9 @@
       "app-update.yml"
     ],
     "protocols": {
-      "name": "Ark URI scheme",
+      "name": "DIDCoin URI scheme",
       "schemes": [
-        "ark"
+        "did"
       ],
       "role": "Viewer"
     },
