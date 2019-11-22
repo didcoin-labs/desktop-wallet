@@ -8,7 +8,11 @@ export default {
   namespaced: true,
 
   state: () => ({
-    tickers: {}
+    tickers: {
+      'DID/IQD': {
+        price: 1000
+      }
+    }
   }),
 
   getters: {

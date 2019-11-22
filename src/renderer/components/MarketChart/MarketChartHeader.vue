@@ -25,7 +25,7 @@
       </div>
     </Transition>
 
-    <div class="mt-1">
+    <div class="mt-1" v-if="false">
       <span class="text-lg font-semibold mr-4 mt-4">
         {{ $t('MARKET_CHART_HEADER.SHOW_CHART') }}
       </span>
