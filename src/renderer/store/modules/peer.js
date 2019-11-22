@@ -297,26 +297,29 @@ export default {
         return
       }
 
-      const networkLookup = {
-        'ark.mainnet': 'mainnet',
-        'ark.devnet': 'devnet'
-      }
+      // const networkLookup = {
+      //   'did.mainnet': 'mainnet',
+      //   'did.devnet': 'devnet'
+      // }
 
       let peerDiscovery = null
-      if (networkLookup[network.id]) {
-        peerDiscovery = await PeerDiscovery.new({
-          networkOrHost: networkLookup[network.id]
-        })
-      } else if (getters.current()) {
-        const peerUrl = getBaseUrl(getters.current())
-        peerDiscovery = await PeerDiscovery.new({
-          networkOrHost: `${peerUrl}/api/v2/peers`
-        })
-      } else {
-        peerDiscovery = await PeerDiscovery.new({
-          networkOrHost: `${network.server}/api/v2/peers`
-        })
-      }
+      // if (networkLookup[network.id]) {
+      //   peerDiscovery = await PeerDiscovery.new({
+      //     networkOrHost: networkLookup[network.id]
+      //   })
+      // } else if (getters.current()) {
+      //   const peerUrl = getBaseUrl(getters.current())
+      //   peerDiscovery = await PeerDiscovery.new({
+      //     networkOrHost: `${peerUrl}/api/v2/peers`
+      //   })
+      // } else {
+      //   peerDiscovery = await PeerDiscovery.new({
+      //     networkOrHost: `${network.server}/api/v2/peers`
+      //   })
+      // }
+      peerDiscovery = await PeerDiscovery.new({
+        networkOrHost: `${network.server}/api/v2/peers`
+      })
 
       peerDiscovery.withLatency(300)
         .sortBy('latency')

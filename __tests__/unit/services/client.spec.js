@@ -14,7 +14,7 @@ jest.mock('@/store', () => ({
     },
     'network/byId': (id) => {
       let version = 23
-      if (id === 'ark.devnet') {
+      if (id === 'did.devnet') {
         version = 30
       }
       return {
@@ -566,7 +566,7 @@ describe('Services > Client', () => {
   describe('buildTransfer', () => {
     describe('when a custom network is specified', () => {
       it('should have the correct version', async () => {
-        const networkId = 'ark.devnet'
+        const networkId = 'did.devnet'
         const transaction = await client.buildTransfer({ fee: new BigNumber(fees[0]), networkId }, false, true)
         expect(transaction.data.network).toBe(30)
       })
