@@ -589,7 +589,7 @@ export default {
         THEME: 'Scegli modalità chiara o modalità scura',
         BACKGROUND: 'Scegli il tuo sfondo preferito',
         NAME: 'Nome profilo',
-        TITLE: '3. Aspetto'
+        TITLE: '2. Aspetto'
       }
     },
 

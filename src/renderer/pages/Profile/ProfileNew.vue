@@ -95,7 +95,7 @@
             </div>
           </MenuStepItem>
 
-          <MenuStepItem
+          <!-- <MenuStepItem
             :step="2"
             :is-back-visible="true"
             :is-next-enabled="!$v.step2.$invalid"
@@ -105,7 +105,7 @@
             @next="moveTo(3)"
           >
             <div class="flex flex-col">
-              <!-- Show the two default networks, and a button to load more -->
+              <!- - Show the two default networks, and a button to load more - ->
               <SelectionNetwork
                 :selected="selectedNetwork"
                 :networks="defaultNetworks"
@@ -126,15 +126,15 @@
                 @select="selectNetwork"
               />
             </div>
-          </MenuStepItem>
+          </MenuStepItem> -->
 
           <MenuStepItem
-            :step="3"
+            :step="2"
             :is-back-visible="true"
             :is-next-enabled="!$v.schema.$invalid"
-            :is-disabled="step < 3"
+            :is-disabled="step < 2"
             :title="$t('PAGES.PROFILE_NEW.STEP3.TITLE')"
-            @back="moveTo(2)"
+            @back="moveTo(1)"
             @next="create"
           >
             <div class="flex flex-col h-full w-full justify-around">
@@ -195,7 +195,7 @@ import Profile from '@/models/profile'
 import { ButtonSwitch } from '@/components/Button'
 import { MenuStep, MenuStepItem } from '@/components/Menu'
 import { InputLanguage, InputSelect, InputText } from '@/components/Input'
-import { SelectionAvatar, SelectionBackground, SelectionNetwork, SelectionTheme } from '@/components/Selection'
+import { SelectionAvatar, SelectionBackground, /* SelectionNetwork, */ SelectionTheme } from '@/components/Selection'
 
 export default {
   name: 'ProfileNew',
@@ -209,7 +209,7 @@ export default {
     MenuStepItem,
     SelectionAvatar,
     SelectionBackground,
-    SelectionNetwork,
+    // SelectionNetwork,
     SelectionTheme
   },
 

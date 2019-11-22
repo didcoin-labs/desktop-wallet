@@ -43,7 +43,7 @@
           />
 
           <!-- Announcements -->
-          <MenuNavigationItem
+          <!-- <MenuNavigationItem
             id="announcements"
             :title="$t('APP_SIDEMENU.ANNOUNCEMENTS')"
             class="AppSidemenu__item"
@@ -51,10 +51,10 @@
             :show-badge="showUnread"
             icon="whitepaper"
             @click="redirect($event)"
-          />
+          /> -->
 
           <!-- Plugins -->
-          <MenuNavigationItem
+          <!-- <MenuNavigationItem
             id="plugins"
             :title="$t('APP_SIDEMENU.PLUGINS')"
             :is-horizontal="isHorizontal"
@@ -62,10 +62,10 @@
             class="AppSidemenu__item"
             icon="plugins"
             @click="redirect($event)"
-          />
+          /> -->
 
           <!-- Plugin pages -->
-          <MenuNavigationItem
+          <!-- <MenuNavigationItem
             v-if="hasPluginMenuItems"
             id="plugin-pages"
             :title="$t('APP_SIDEMENU.PLUGINS_PAGES')"
@@ -74,7 +74,7 @@
             class="AppSidemenu__item"
             icon="more"
             @click="toggleShowPluginMenu"
-          />
+          /> -->
 
           <AppSidemenuPlugins
             v-if="hasPluginMenuItems && isPluginMenuVisible"
@@ -101,10 +101,10 @@
             :is-horizontal="isHorizontal"
           />
 
-          <AppSidemenuNetworkStatus
+          <!-- <AppSidemenuNetworkStatus
             :is-horizontal="isHorizontal"
             :outside-click="true"
-          />
+          /> -->
 
           <!-- Profile settings -->
           <div
@@ -142,7 +142,7 @@
 import { mapGetters } from 'vuex'
 import AppSidemenuPlugins from './AppSidemenuPlugins'
 import AppSidemenuSettings from './AppSidemenuSettings'
-import AppSidemenuNetworkStatus from './AppSidemenuNetworkStatus'
+// import AppSidemenuNetworkStatus from './AppSidemenuNetworkStatus'
 import AppSidemenuImportantNotification from './AppSidemenuImportantNotification'
 import { MenuNavigation, MenuNavigationItem } from '@/components/Menu'
 import { ProfileAvatar } from '@/components/Profile'
@@ -156,7 +156,7 @@ export default {
   components: {
     AppSidemenuPlugins,
     AppSidemenuSettings,
-    AppSidemenuNetworkStatus,
+    // AppSidemenuNetworkStatus,
     AppSidemenuImportantNotification,
     MenuNavigation,
     MenuNavigationItem,

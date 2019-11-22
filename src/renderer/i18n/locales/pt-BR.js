@@ -578,7 +578,7 @@ export default {
         THEME: 'Escolha o tema',
         BACKGROUND: 'Selecione seu plano de fundo favorito',
         NAME: 'Nome do perfil',
-        TITLE: '3. Aparência'
+        TITLE: '2. Aparência'
       }
     },
 

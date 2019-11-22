@@ -589,7 +589,7 @@ export default {
         THEME: 'Choose theme',
         BACKGROUND: 'Select your favorite background',
         NAME: 'Profile name',
-        TITLE: '3. Appearance'
+        TITLE: '2. Appearance'
       }
     },
 
