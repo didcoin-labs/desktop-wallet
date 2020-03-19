@@ -5,21 +5,25 @@
         class="ProfileNew__instructions theme-dark bg-theme-feature text-theme-page-instructions-text hidden lg:flex flex-1 mr-4 rounded-lg overflow-y-auto"
       >
         <div class="m-auto w-3/5 text-center flex flex-col items-center justify-center">
-          <h1 class="text-inherit">{{ $t(`PAGES.PROFILE_NEW.STEP${step}.INSTRUCTIONS.HEADER`) }}</h1>
-          <p
-            class="text-center py-2 leading-normal"
-          >{{ $t(`PAGES.PROFILE_NEW.STEP${step}.INSTRUCTIONS.TEXT`) }}</p>
+          <h1 class="text-inherit">
+            {{ $t(`PAGES.PROFILE_NEW.STEP${step}.INSTRUCTIONS.HEADER`) }}
+          </h1>
+          <p class="text-center py-2 leading-normal">
+            {{ $t(`PAGES.PROFILE_NEW.STEP${step}.INSTRUCTIONS.TEXT`) }}
+          </p>
 
           <img
             :src="assets_loadImage(`pages/profile-new/step-${step}.png`)"
             :title="$t(`PAGES.PROFILE_NEW.STEP${step}.INSTRUCTIONS.HEADER`)"
             class="w-full xl:w-4/5 mt-10"
-          />
+          >
         </div>
       </div>
 
       <div class="flex-none w-full lg:max-w-sm p-10 bg-theme-feature rounded-lg overflow-y-auto">
-        <MenuStep v-model="step">
+        <MenuStep
+          v-model="step"
+        >
           <MenuStepItem
             :step="1"
             :is-next-enabled="!$v.step1.$invalid"
@@ -48,7 +52,11 @@
               </div>
 
               <div class="flex mb-5">
-                <InputLanguage v-model="language" name="language" class="flex-1 mr-5" />
+                <InputLanguage
+                  v-model="language"
+                  name="language"
+                  class="flex-1 mr-5"
+                />
 
                 <InputSelect
                   v-model="bip39Language"
@@ -69,12 +77,14 @@
                 />
               </div>
 
-              <div
-                class="flex items-center justify-between mt-5 pt-5 mb-2 border-t border-theme-line-separator border-dashed"
-              >
+              <div class="flex items-center justify-between mt-5 pt-5 mb-2 border-t border-theme-line-separator border-dashed">
                 <div class="mr-2">
-                  <h5 class="mb-2">{{ $t('COMMON.AVATAR') }}</h5>
-                  <p class="text-theme-page-text-light">{{ $t('PAGES.PROFILE_NEW.STEP1.AVATAR') }}</p>
+                  <h5 class="mb-2">
+                    {{ $t('COMMON.AVATAR') }}
+                  </h5>
+                  <p class="text-theme-page-text-light">
+                    {{ $t('PAGES.PROFILE_NEW.STEP1.AVATAR') }}
+                  </p>
                 </div>
                 <SelectionAvatar
                   :selected="schema.avatar"
@@ -116,7 +126,7 @@
                 @select="selectNetwork"
               />
             </div>
-          </MenuStepItem>-->
+          </MenuStepItem> -->
 
           <MenuStepItem
             :step="2"
@@ -130,10 +140,12 @@
             <div class="flex flex-col h-full w-full justify-around">
               <div class="flex items-center justify-between mb-5 mt-2">
                 <div>
-                  <h5 class="mb-2">{{ $t('COMMON.IS_MARKET_CHART_ENABLED') }}</h5>
-                  <p
-                    class="text-theme-page-text-light"
-                  >{{ $t('PAGES.PROFILE_NEW.STEP2.MARKET_CHART') }}</p>
+                  <h5 class="mb-2">
+                    {{ $t('COMMON.IS_MARKET_CHART_ENABLED') }}
+                  </h5>
+                  <p class="text-theme-page-text-light">
+                    {{ $t('PAGES.PROFILE_NEW.STEP2.MARKET_CHART') }}
+                  </p>
                 </div>
                 <ButtonSwitch
                   :is-active="isMarketChartEnabled"
@@ -143,20 +155,31 @@
 
               <div class="flex items-center justify-between mb-5 mt-2">
                 <div>
-                  <h5 class="mb-2">{{ $t('COMMON.THEME') }}</h5>
-                  <p class="text-theme-page-text-light">{{ $t('PAGES.PROFILE_NEW.STEP2.THEME') }}</p>
+                  <h5 class="mb-2">
+                    {{ $t('COMMON.THEME') }}
+                  </h5>
+                  <p class="text-theme-page-text-light">
+                    {{ $t('PAGES.PROFILE_NEW.STEP2.THEME') }}
+                  </p>
                 </div>
-                <SelectionTheme v-model="theme" />
+                <SelectionTheme
+                  v-model="theme"
+                />
               </div>
 
               <div class="flex items-center justify-between">
                 <div>
-                  <h5 class="mb-2">{{ $t('COMMON.BACKGROUND') }}</h5>
-                  <p
-                    class="text-theme-page-text-light"
-                  >{{ $t('PAGES.PROFILE_NEW.STEP2.BACKGROUND') }}</p>
+                  <h5 class="mb-2">
+                    {{ $t('COMMON.BACKGROUND') }}
+                  </h5>
+                  <p class="text-theme-page-text-light">
+                    {{ $t('PAGES.PROFILE_NEW.STEP2.BACKGROUND') }}
+                  </p>
                 </div>
-                <SelectionBackground :selected="background" @select="selectBackground" />
+                <SelectionBackground
+                  :selected="background"
+                  @select="selectBackground"
+                />
               </div>
             </div>
           </MenuStepItem>
@@ -167,19 +190,15 @@
 </template>
 
 <script>
-import { BIP39, NETWORKS } from "@config";
-import Profile from "@/models/profile";
-import { ButtonSwitch } from "@/components/Button";
-import { MenuStep, MenuStepItem } from "@/components/Menu";
-import { InputLanguage, InputSelect, InputText } from "@/components/Input";
-import {
-  SelectionAvatar,
-  SelectionBackground,
-  /* SelectionNetwork, */ SelectionTheme
-} from "@/components/Selection";
+import { BIP39, NETWORKS } from '@config'
+import Profile from '@/models/profile'
+import { ButtonSwitch } from '@/components/Button'
+import { MenuStep, MenuStepItem } from '@/components/Menu'
+import { InputLanguage, InputSelect, InputText } from '@/components/Input'
+import { SelectionAvatar, SelectionBackground, /* SelectionNetwork, */ SelectionTheme } from '@/components/Selection'
 
 export default {
-  name: "ProfileNew",
+  name: 'ProfileNew',
 
   components: {
     ButtonSwitch,
@@ -203,243 +222,226 @@ export default {
 
   computed: {
     background: {
-      get() {
-        return this.$store.getters["session/background"];
+      get () {
+        return this.$store.getters['session/background']
       },
-      set(background) {
-        this.selectBackground(background);
+      set (background) {
+        this.selectBackground(background)
       }
     },
     language: {
-      get() {
-        return this.$store.getters["session/language"];
+      get () {
+        return this.$store.getters['session/language']
       },
-      set(language) {
-        this.selectLanguage(language);
+      set (language) {
+        this.selectLanguage(language)
       }
     },
     bip39Language: {
-      get() {
-        return (
-          this.$store.getters["session/bip39Language"] || BIP39.defaultLanguage
-        );
+      get () {
+        return this.$store.getters['session/bip39Language'] || BIP39.defaultLanguage
       },
-      set(bip39language) {
-        this.selectBip39Language(bip39language);
+      set (bip39language) {
+        this.selectBip39Language(bip39language)
       }
     },
     currency: {
-      get() {
-        return this.$store.getters["session/currency"];
+      get () {
+        return this.$store.getters['session/currency']
       },
-      set(currency) {
-        this.selectCurrency(currency);
+      set (currency) {
+        this.selectCurrency(currency)
       }
     },
     isMarketChartEnabled: {
-      get() {
-        return this.$store.getters["session/isMarketChartEnabled"];
+      get () {
+        return this.$store.getters['session/isMarketChartEnabled']
       },
-      set(isMarketChartEnabled) {
-        this.selectIsMarketChartEnabled(isMarketChartEnabled);
+      set (isMarketChartEnabled) {
+        this.selectIsMarketChartEnabled(isMarketChartEnabled)
       }
     },
     theme: {
-      get() {
-        return this.$store.getters["session/theme"];
+      get () {
+        return this.$store.getters['session/theme']
       },
-      set(theme) {
-        this.selectTheme(theme);
+      set (theme) {
+        this.selectTheme(theme)
       }
     },
     timeFormat: {
-      get() {
-        return this.$store.getters["session/timeFormat"] || "Default";
+      get () {
+        return this.$store.getters['session/timeFormat'] || 'Default'
       },
-      set(timeFormat) {
-        this.selectTimeFormat(timeFormat);
+      set (timeFormat) {
+        this.selectTimeFormat(timeFormat)
       }
     },
-    currencies() {
-      return this.$store.getters["market/currencies"];
+    currencies () {
+      return this.$store.getters['market/currencies']
     },
-    bip39Languages() {
+    bip39Languages () {
       return BIP39.languages.reduce((all, language) => {
-        all[language] = this.$t(`BIP39_LANGUAGES.${language}`);
+        all[language] = this.$t(`BIP39_LANGUAGES.${language}`)
 
-        return all;
-      }, {});
+        return all
+      }, {})
     },
-    timeFormats() {
-      return ["Default", "12h", "24h"].reduce((all, format) => {
-        all[format] = this.$t(`TIME_FORMAT.${format.toUpperCase()}`);
-        return all;
-      }, {});
+    timeFormats () {
+      return ['Default', '12h', '24h'].reduce((all, format) => {
+        all[format] = this.$t(`TIME_FORMAT.${format.toUpperCase()}`)
+        return all
+      }, {})
     },
-    defaultNetworks() {
-      return NETWORKS.map(network => network);
+    defaultNetworks () {
+      return NETWORKS.map(network => network)
     },
-    customNetworks() {
-      return this.$store.getters["network/customNetworks"];
+    customNetworks () {
+      return this.$store.getters['network/customNetworks']
     },
     availableCustomNetworks: {
-      get() {
-        return Object.values(this.customNetworks);
+      get () {
+        return Object.values(this.customNetworks)
       },
       cache: false
     },
-    nameError() {
+    nameError () {
       if (this.$v.schema.name.$dirty && this.$v.schema.name.$invalid) {
         if (!this.$v.schema.name.doesNotExist) {
-          return this.$t("VALIDATION.NAME.DUPLICATED", [this.schema.name]);
+          return this.$t('VALIDATION.NAME.DUPLICATED', [this.schema.name])
         } else if (!this.$v.schema.name.schemaMaxLength) {
-          return this.$t("VALIDATION.NAME.MAX_LENGTH", [
-            Profile.schema.properties.name.maxLength
-          ]);
+          return this.$t('VALIDATION.NAME.MAX_LENGTH', [Profile.schema.properties.name.maxLength])
         } else if (!this.$v.schema.name.schemaMinLength) {
-          return this.$tc(
-            "VALIDATION.NAME.MIN_LENGTH",
-            Profile.schema.properties.name.minLength
-          );
+          return this.$tc('VALIDATION.NAME.MIN_LENGTH', Profile.schema.properties.name.minLength)
         }
       }
 
-      return null;
+      return null
     }
   },
 
   /**
    * Reuse the settings of the current profile every time the page is created
    */
-  created() {
-    this.selectNetwork(
-      this.defaultNetworks.find(network => network.id === "did.mainnet")
-    );
-    this.schema.background = this.background;
-    this.schema.bip39Language = this.bip39Language;
-    this.schema.currency = this.currency;
-    this.schema.isMarketChartEnabled = this.isMarketChartEnabled;
-    this.schema.language = this.language;
-    this.schema.timeFormat = this.timeFormat;
+  created () {
+    this.selectNetwork(this.defaultNetworks.find(network => network.id === 'did.mainnet'))
+    this.schema.background = this.background
+    this.schema.bip39Language = this.bip39Language
+    this.schema.currency = this.currency
+    this.schema.isMarketChartEnabled = this.isMarketChartEnabled
+    this.schema.language = this.language
+    this.schema.timeFormat = this.timeFormat
 
     // In case we came from a profile using a plugin theme, revert back to default
-    const defaultThemes = ["light", "dark"];
+    const defaultThemes = ['light', 'dark']
     this.schema.theme = defaultThemes.includes(this.theme)
       ? this.theme
-      : defaultThemes[0];
-    if (this.schema.theme !== this.$store.getters["session/theme"]) {
-      this.$store.dispatch("session/setTheme", this.schema.theme);
+      : defaultThemes[0]
+    if (this.schema.theme !== this.$store.getters['session/theme']) {
+      this.$store.dispatch('session/setTheme', this.schema.theme)
     }
   },
 
-  destroyed() {
-    this.$store.dispatch("session/setProfileId", this.session_profile.id);
+  destroyed () {
+    this.$store.dispatch('session/setProfileId', this.session_profile.id)
   },
 
-  beforeRouteEnter(to, from, next) {
+  beforeRouteEnter (to, from, next) {
     next(vm => {
-      vm.$synchronizer.focus();
-      vm.$synchronizer.pause("market");
-    });
+      vm.$synchronizer.focus()
+      vm.$synchronizer.pause('market')
+    })
   },
 
   methods: {
-    async create() {
-      const { id } = await this.$store.dispatch("profile/create", this.schema);
-      await this.$store.dispatch("session/setProfileId", id);
-      this.$router.push({ name: "dashboard" });
+    async create () {
+      const { id } = await this.$store.dispatch('profile/create', this.schema)
+      await this.$store.dispatch('session/setProfileId', id)
+      this.$router.push({ name: 'dashboard' })
     },
 
-    moveTo(step) {
-      this.step = step;
+    moveTo (step) {
+      this.step = step
     },
 
-    selectAvatar(avatar) {
-      if (typeof avatar === "string") {
-        this.schema.avatar = avatar;
+    selectAvatar (avatar) {
+      if (typeof avatar === 'string') {
+        this.schema.avatar = avatar
       } else if (avatar.onlyLetter) {
-        this.schema.avatar = null;
+        this.schema.avatar = null
       } else if (avatar.name) {
         this.schema.avatar = {
           avatarName: avatar.name,
           pluginId: avatar.pluginId
-        };
+        }
       } else {
-        throw new Error(`Invalid value for avatar: ${avatar}`);
+        throw new Error(`Invalid value for avatar: ${avatar}`)
       }
     },
 
-    async selectBackground(background) {
-      this.schema.background = background;
-      await this.$store.dispatch("session/setBackground", background);
+    async selectBackground (background) {
+      this.schema.background = background
+      await this.$store.dispatch('session/setBackground', background)
     },
 
-    selectCurrency(currency) {
-      this.schema.currency = currency;
+    selectCurrency (currency) {
+      this.schema.currency = currency
     },
 
-    selectLanguage(language) {
-      this.schema.language = language;
-      this.$store.dispatch("session/setLanguage", language);
+    selectLanguage (language) {
+      this.schema.language = language
+      this.$store.dispatch('session/setLanguage', language)
     },
 
-    selectBip39Language(bip39Language) {
-      this.schema.bip39Language = bip39Language;
-      this.$store.dispatch("session/setBip39Language", bip39Language);
+    selectBip39Language (bip39Language) {
+      this.schema.bip39Language = bip39Language
+      this.$store.dispatch('session/setBip39Language', bip39Language)
     },
 
-    selectNetwork(network) {
-      this.schema.networkId = network.id;
-      this.selectedNetwork = network;
+    selectNetwork (network) {
+      this.schema.networkId = network.id
+      this.selectedNetwork = network
     },
 
-    selectNetworkFromModal(network, toggle) {
-      this.schema.networkId = network.id;
-      this.selectedNetwork = network;
-      toggle();
+    selectNetworkFromModal (network, toggle) {
+      this.schema.networkId = network.id
+      this.selectedNetwork = network
+      toggle()
     },
 
-    async selectIsMarketChartEnabled(isMarketChartEnabled) {
-      this.schema.isMarketChartEnabled = isMarketChartEnabled;
-      await this.$store.dispatch(
-        "session/setIsMarketChartEnabled",
-        isMarketChartEnabled
-      );
+    async selectIsMarketChartEnabled (isMarketChartEnabled) {
+      this.schema.isMarketChartEnabled = isMarketChartEnabled
+      await this.$store.dispatch('session/setIsMarketChartEnabled', isMarketChartEnabled)
     },
 
-    async selectTheme(theme) {
-      this.schema.theme = theme;
-      await this.$store.dispatch("session/setTheme", theme);
+    async selectTheme (theme) {
+      this.schema.theme = theme
+      await this.$store.dispatch('session/setTheme', theme)
     },
 
-    async selectTimeFormat(timeFormat) {
-      this.schema.timeFormat = timeFormat;
-      await this.$store.dispatch("session/setTimeFormat", timeFormat);
+    async selectTimeFormat (timeFormat) {
+      this.schema.timeFormat = timeFormat
+      await this.$store.dispatch('session/setTimeFormat', timeFormat)
     }
   },
 
   validations: {
-    step1: [
-      "schema.avatar",
-      "schema.currency",
-      "schema.language",
-      "schema.name"
-    ],
-    step2: ["schema.networkId"],
+    step1: ['schema.avatar', 'schema.currency', 'schema.language', 'schema.name'],
+    step2: ['schema.networkId'],
     schema: {
       name: {
-        doesNotExist(value) {
-          return !this.$store.getters["profile/doesExist"](value);
+        doesNotExist (value) {
+          return !this.$store.getters['profile/doesExist'](value)
         }
       }
     }
   }
-};
+}
 </script>
 
 <style scoped>
 .ProfileNew__time-format-container {
   /* To produce the exact same width  (.pr-5 class / 2) */
-  padding-right: 0.625rem;
+  padding-right: 0.625rem
 }
 </style>
